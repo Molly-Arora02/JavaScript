@@ -5,12 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
-<body>
+<style>
+  .bag{
+    background-color: rgb(170, 226, 176);
+    color: rgb(4, 5, 5);
+    border-radius: 6px;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #wish{
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 6px;
+    border: 2;
+    text-transform: uppercase;
+  }
+  #bag2{
+    background-color: rgb(170, 226, 176);
+    color: rgb(4, 5, 5);
+    border-radius: 8px;
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 30px;
   
-
-  <!-- <script src="third.js"></script> -->
-   <!-- <script src="fourth.js"></script> -->
-    <!-- <script src="fifth.js"> </script> -->
-     <script src="game.js"></script>
+    padding-right: 30px;
+  }
+    body{
+     padding-left: 300px;
+     padding-right: 300px;
+     padding-top: 300px;
+     align-items: center;
+    }
+  
+</style>
+<body>
+  <h1>
+    Cart BUtton 
+    
+  </h1>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <button class="bag" onclick="cartQuantity = cartQuantity+1; document.querySelector('#cart-summary').
+  innerText =`Your Bag has ${cartQuantity} items` ">Add to Bag</button>
+  <button id="wish" onclick="alert('Added to wishlist')">Move to Wishlist </button>
+   <button id="bag2" onclick="alert('Added 1+1 Sale item ')">Added 1+1 Sale item</button>
+   <h1 id="cart-summary">
+    Your Bag has 0 item 
+   </h1>
+ <script>
+  let cartQuantity = 0;
+  document.querySelector('#cart-summary')
+  innerText =`Your Bag has ${carQuantity}+ items`
+ </script>
 </body>
 </html>
